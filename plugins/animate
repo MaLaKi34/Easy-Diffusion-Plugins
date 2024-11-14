@@ -1,0 +1,4013 @@
+{
+  "last_node_id": 641,
+  "last_link_id": 765,
+  « nœuds » : [
+    {
+      "id": 169,
+      "type": "SetNode",
+      "pos": [
+        407.93014494775383,
+        91.15395407153339
+      ],
+      "taille": {
+        "0": 210,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 48,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "CLIP",
+          "type": "CLIP",
+          "lien": 215
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "*",
+          "taper": "*",
+          « liens » : nul
+        }
+      ],
+      "titre": "Set_CLIP",
+      "propriétés": {
+        "Nom précédent": "CLIP"
+      },
+      "widgets_values": [
+        "AGRAFE"
+      ],
+      "couleur": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 173,
+      "type": "SetNode",
+      "pos": [
+        7.930144947753946,
+        91.15395407153339
+      ],
+      "taille": {
+        "0": 210,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 40,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "MODÈLE",
+          "type": "MODÈLE",
+          "lien": 221
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "*",
+          "taper": "*",
+          « liens » : nul
+        }
+      ],
+      "titre": "Set_MODEL",
+      "propriétés": {
+        "previousName": "MODÈLE"
+      },
+      "widgets_values": [
+        "MODÈLE"
+      ],
+      "couleur": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 259,
+      "type": "SetNode",
+      "pos": [
+        147.93014494775403,
+        91.15395407153339
+      ],
+      "taille": {
+        "0": 210,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 46,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "LATENT",
+          "type": "LATENT",
+          "lien": 358
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "*",
+          "taper": "*",
+          « liens » : nul
+        }
+      ],
+      "title": "Set_LATENT - VIDE",
+      "propriétés": {
+        "previousName": "LATENT - VIDE"
+      },
+      "widgets_values": [
+        « LATENT - VIDE »
+      ],
+      "couleur": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 369,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        -536.4361967128904,
+        19.27275958496167
+      ],
+      "taille": [
+        454.6257629394531,
+        951.9386444091797
+      ],
+      "drapeaux": {
+        « épinglé » : vrai
+      },
+      "commande": 65,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "images",
+          "type": "IMAGE",
+          "lien": 635,
+          "slot_index": 0
+        },
+        {
+          "nom": "audio",
+          "type": "VHS_AUDIO",
+          "lien": nul
+        },
+        {
+          "nom": "meta_batch",
+          "type": "VHS_BatchManager",
+          "lien": nul
+        },
+        {
+          "nom": "préfixe_nom_fichier",
+          "type": "CHAÎNE",
+          "lien": 452,
+          "widget": {
+            "nom": "préfixe_nom_fichier"
+          },
+          "slot_index": 3
+        }
+      ],
+      « sorties » : [
+        {
+          "name": "Noms de fichiers",
+          "type": "NOMS_DE_FICHIERS_VHS",
+          "liens": [],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « VHS_VideoCombine »
+      },
+      "widgets_values": {
+        "frame_rate": 20,
+        "loop_count": 0,
+        "filename_prefix": "AnimateDiff",
+        "format": "vidéo/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": faux,
+        "pingpong" : faux,
+        "save_output": vrai,
+        "aperçu vidéo": {
+          "caché" : faux,
+          "en pause" : faux,
+          "paramètres": {
+            "nom de fichier": "_ADIFF_HDR_00067.mp4",
+            "sous-dossier": "HDR",
+            "type": "sortie",
+            "format": "vidéo/h264-mp4",
+            "frame_rate": 20
+          }
+        }
+      },
+      "couleur": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 278,
+      "type": "GetNode",
+      "pos": [
+        1671.8609940664453,
+        1084.2195458403203
+      ],
+      "taille": {
+        "0": 210,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 0,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "VAE",
+          "type": "VAE",
+          « liens » : [
+            391
+          ],
+          "slot_index": 0
+        }
+      ],
+      "titre": "Obtenir_VAE",
+      "propriétés": {},
+      "widgets_values": [
+        "VAE"
+      ],
+      "couleur": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 276,
+      "type": "GetNode",
+      "pos": [
+        1669.8609940664453,
+        1127.2195458403203
+      ],
+      "taille": {
+        "0": 210,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 1,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "IMAGE",
+          "type": "IMAGE",
+          « liens » : [
+            390
+          ],
+          "slot_index": 0
+        }
+      ],
+      "titre": "Obtenir_l'IMAGE IPA",
+      "propriétés": {},
+      "widgets_values": [
+        "IMAGE IPA"
+      ],
+      "couleur": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 63,
+      "type": "LoadImage",
+      "pos": [
+        -1490,
+        39
+      ],
+      "taille": {
+        "0": 437.5998840332031,
+        "1": 967.2135009765625
+      },
+      "drapeaux": {
+        « épinglé » : vrai
+      },
+      "commande": 2,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "IMAGE",
+          "type": "IMAGE",
+          « liens » : [
+            383,
+            631
+          ],
+          "forme": 3,
+          "slot_index": 0
+        },
+        {
+          "nom": "MASQUE",
+          "type": "MASQUE",
+          "liens": nul,
+          "forme": 3
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « LoadImage »
+      },
+      "widgets_values": [
+        "latine (2).png",
+        "image"
+      ],
+      "couleur": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 175,
+      "type": "SetNode",
+      "pos": [
+        1403.939376390663,
+        1117.3944467192273
+      ],
+      "taille": {
+        "0": 210,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 42,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "MODÈLE",
+          "type": "MODÈLE",
+          "lien": 639
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "*",
+          "taper": "*",
+          « liens » : nul
+        }
+      ],
+      "titre": "Set_IPA MODEL",
+      "propriétés": {
+        "previousName": "MODÈLE IPA"
+      },
+      "widgets_values": [
+        "MODÈLE IPA"
+      ],
+      "couleur": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 168,
+      "type": "SetNode",
+      "pos": [
+        323,
+        59
+      ],
+      "taille": {
+        "0": 210,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 47,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "VAE",
+          "type": "VAE",
+          "lien": 214
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "*",
+          "taper": "*",
+          « liens » : nul
+        }
+      ],
+      "titre": "Set_VAE",
+      "propriétés": {
+        "précédentNom": "VAE"
+      },
+      "widgets_values": [
+        "VAE"
+      ],
+      "couleur": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 305,
+      "type": "SetNode",
+      "pos": [
+        157,
+        95
+      ],
+      "taille": {
+        "0": 210,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 45,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "CONDITIONNEMENT",
+          "type": "CONDITIONNEMENT",
+          "lien": 413
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "*",
+          "taper": "*",
+          « liens » : nul
+        }
+      ],
+      "titre": "Set_NEG",
+      "propriétés": {
+        "previousName": "NEG"
+      },
+      "widgets_values": [
+        "NÉG"
+      ],
+      "couleur": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 273,
+      "type": "SetNode",
+      "pos": [
+        1479.939376390663,
+        1019.3944467192273
+      ],
+      "taille": {
+        "0": 210,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 49,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "IMAGE",
+          "type": "IMAGE",
+          "lien": 386
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "*",
+          "taper": "*",
+          "liens": [],
+          "slot_index": 0
+        }
+      ],
+      "titre": "Définir_IMAGE IPA",
+      "propriétés": {
+        "previousName": "IMAGE IPA"
+      },
+      "widgets_values": [
+        "IMAGE IPA"
+      ],
+      "couleur": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 17,
+      "type": "ADE_LoopedUniformContextOptions",
+      "pos": [
+        2880.5797081733735,
+        1074.5450363226867
+      ],
+      "taille": {
+        "0": 330,
+        "1": 250
+      },
+      "drapeaux": {
+        "effondré" : vrai,
+        "épinglé" : faux
+      },
+      "commande": 3,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "prev_context",
+          "type": "OPTIONS_CONTEXTE",
+          "lien": nul
+        },
+        {
+          "nom": "view_opts",
+          "type": "VIEW_OPTS",
+          "lien": nul
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "CONTEXT_OPTS",
+          "type": "OPTIONS_CONTEXTE",
+          « liens » : [
+            701
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « ADE_LoopedUniformContextOptions »
+      },
+      "widgets_values": [
+        16,
+        1,
+        4,
+        FAUX,
+        "pyramide",
+        FAUX,
+        0,
+        1
+      ],
+      "couleur": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 172,
+      "type": "GetNode",
+      "pos": [
+        2815.3222007064105,
+        1209.9896313103245
+      ],
+      "taille": {
+        "0": 210,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "ordre": 4,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "VAE",
+          "type": "VAE",
+          « liens » : [
+            714,
+            715,
+            716,
+            763
+          ],
+          "slot_index": 0
+        }
+      ],
+      "titre": "Obtenir_VAE",
+      "propriétés": {},
+      "widgets_values": [
+        "VAE"
+      ],
+      "couleur": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 18,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        -1025,
+        36
+      ],
+      "taille": [
+        439.77008056640625,
+        929.6551208496094
+      ],
+      "drapeaux": {
+        "épinglé" : faux
+      },
+      "commande": 64,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "images",
+          "type": "IMAGE",
+          "lien": 700,
+          "slot_index": 0
+        },
+        {
+          "nom": "audio",
+          "type": "VHS_AUDIO",
+          "lien": nul
+        },
+        {
+          "nom": "meta_batch",
+          "type": "VHS_BatchManager",
+          "lien": nul
+        },
+        {
+          "nom": "préfixe_nom_fichier",
+          "type": "CHAÎNE",
+          "lien": 352,
+          "widget": {
+            "nom": "préfixe_nom_fichier"
+          },
+          "slot_index": 3
+        }
+      ],
+      « sorties » : [
+        {
+          "name": "Noms de fichiers",
+          "type": "NOMS_DE_FICHIERS_VHS",
+          "liens": [],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « VHS_VideoCombine »
+      },
+      "widgets_values": {
+        "frame_rate": 20,
+        "loop_count": 0,
+        "filename_prefix": "AnimateDiff",
+        "format": "vidéo/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": faux,
+        "pingpong" : faux,
+        "save_output": vrai,
+        "aperçu vidéo": {
+          "caché" : faux,
+          "en pause" : faux,
+          "paramètres": {
+            "nom de fichier": "_ADIFF_00026.mp4",
+            "sous-dossier": "Aperçu",
+            "type": "sortie",
+            "format": "vidéo/h264-mp4",
+            "frame_rate": 20
+          }
+        }
+      },
+      "couleur": "#1d6722",
+      "bgcolor": "#09530e"
+    },
+    {
+      "id": 24,
+      "type": "Empileur LoRA",
+      "pos": [
+        649,
+        832
+      ],
+      "taille": {
+        "0": 570,
+        "1": 154
+      },
+      "drapeaux": {
+        "effondré" : faux,
+        "épinglé" : faux
+      },
+      "ordre": 5,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "lora_stack",
+          "type": "LORA_STACK",
+          "lien": nul
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "LORA_STACK",
+          "type": "LORA_STACK",
+          « liens » : [
+            297
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « LoRA Stacker »
+      },
+      "widgets_values": [
+        "avancé",
+        1,
+        "Lit.safetensors",
+        1,
+        0,25,
+        1,
+        "Aucun",
+        1,
+        -0,2,
+        1,
+        "Aucun",
+        1,
+        0,25,
+        1,
+        "Aucun",
+        1,
+        0,15,
+        1,
+        "Aucun",
+        1,
+        0,3,
+        1,
+        "Aucun",
+        1,
+        0,7000000000000001,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1,
+        "Aucun",
+        1,
+        1,
+        1
+      ],
+      "couleur": "#223",
+      "bgcolor": "#335",
+      "forme": 1
+    },
+    {
+      "id": 323,
+      "type": "ADE_AnimateDiffLoaderGen1",
+      "pos": [
+        1578.1673955864208,
+        29.031907895288168
+      ],
+      "taille": {
+        "0": 330,
+        "1": 222
+      },
+      "drapeaux": {
+        "épinglé" : faux
+      },
+      "commande": 43,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "modèle",
+          "type": "MODÈLE",
+          "lien": 750,
+          "slot_index": 0
+        },
+        {
+          "nom": "options_contextuelles",
+          "type": "OPTIONS_CONTEXTE",
+          "lien": 701
+        },
+        {
+          "nom": "motion_lora",
+          "type": "MOTION_LORA",
+          "lien": 434
+        },
+        {
+          "nom": "paramètres_annonces",
+          "type": "AD_SETTINGS",
+          "lien": nul,
+          "slot_index": 3
+        },
+        {
+          "nom": "ad_keyframes",
+          "type": "AD_KEYFRAMES",
+          "lien": nul
+        },
+        {
+          "nom": "paramètres_exemple",
+          "type": "PARAMETRES_D'ECHANTILLONS",
+          "lien": nul,
+          "slot_index": 5
+        },
+        {
+          "nom": "échelle_multival",
+          "type": "MULTIVÉ",
+          "lien": 436,
+          "slot_index": 6
+        },
+        {
+          "nom": "effet_multival",
+          "type": "MULTIVÉ",
+          "lien": 765,
+          "slot_index": 7
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "MODÈLE",
+          "type": "MODÈLE",
+          « liens » : [
+            751
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « ADE_AnimateDiffLoaderGen1 »
+      },
+      "widgets_values": [
+        "AnimerLCM_sd15_t2v.ckpt",
+        "lcm avg(sqrt_linear,linéaire)"
+      ],
+      "couleur": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 636,
+      "type": "ADE_MultivalDynamic",
+      "pos": [
+        1589.1673955864208,
+        302.031907895288
+      ],
+      "taille": {
+        "0": 315,
+        "1": 58
+      },
+      "drapeaux": {},
+      "ordre": 6,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "masque_optionnel",
+          "type": "MASQUE",
+          "lien": nul
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "MULTIVAL",
+          "type": "MULTIVÉ",
+          « liens » : [
+            765
+          ],
+          "forme": 3
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « ADE_MultivalDynamic »
+      },
+      "widgets_values": [
+        0,8
+      ],
+      "couleur": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 528,
+      "type": "Chargeur de modèle d'adaptateur IP",
+      "pos": [
+        1287,
+        818
+      ],
+      "taille": {
+        "0": 370,
+        "1": 60
+      },
+      "drapeaux": {
+        "effondré" : faux,
+        "épinglé" : faux
+      },
+      "ordre": 7,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "IPADAPTER",
+          "type": "adaptateur IP",
+          « liens » : [
+            615
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « IPAdapterModelLoader »
+      },
+      "widgets_values": [
+        "ip-adapter_sd15_vit-G.safetensors"
+      ],
+      "couleur": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 572,
+      "type": "CLIPVisionLoader",
+      "pos": [
+        1489,
+        1057
+      ],
+      "taille": {
+        "0": 461.81817626953125,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 8,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "CLIP_VISION",
+          "type": "CLIP_VISION",
+          « liens » : [
+            638
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « CLIPVisionLoader »
+      },
+      "widgets_values": [
+        "CLIP-ViT-bigG.safetensors"
+      ]
+    },
+    {
+      "id": 527,
+      "type": "Adaptateur IP avancé",
+      "pos": [
+        1286,
+        956
+      ],
+      "taille": {
+        "0": 370,
+        "1": 300
+      },
+      "drapeaux": {
+        "épinglé" : faux
+      },
+      "commande": 41,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "modèle",
+          "type": "MODÈLE",
+          "lien": 637
+        },
+        {
+          "nom": "adaptateur IP",
+          "type": "adaptateur IP",
+          "lien": 615
+        },
+        {
+          "nom": "image",
+          "type": "IMAGE",
+          "lien": 627
+        },
+        {
+          "nom": "image_negative",
+          "type": "IMAGE",
+          "lien": nul
+        },
+        {
+          "nom": "attn_mask",
+          "type": "MASQUE",
+          "lien": nul,
+          "slot_index": 4
+        },
+        {
+          "nom": "clip_vision",
+          "type": "CLIP_VISION",
+          "lien": 638
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "MODÈLE",
+          "type": "MODÈLE",
+          « liens » : [
+            749
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « IPAdapterAdvanced »
+      },
+      "widgets_values": [
+        0,4,
+        "linéaire",
+        "concat",
+        0,
+        0,5,
+        "V seulement"
+      ],
+      "couleur": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 517,
+      "type": "SetNode",
+      "pos": [
+        1696,
+        1137
+      ],
+      "taille": {
+        "0": 210,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 51,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "LATENT",
+          "type": "LATENT",
+          "lien": 608
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "*",
+          "taper": "*",
+          "liens": [],
+          "slot_index": 0
+        }
+      ],
+      "titre": "Set_LATENT - IPA",
+      "propriétés": {
+        "previousName": "LATENT - IPA"
+      },
+      "widgets_values": [
+        "LATENTE - IPA"
+      ],
+      "couleur": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 281,
+      "type": "GetNode",
+      "pos": [
+        1709,
+        1146
+      ],
+      "taille": {
+        "0": 210,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 9,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "INT",
+          "type": "INT",
+          « liens » : [
+            394
+          ],
+          "slot_index": 0
+        }
+      ],
+      "titre": "Obtenir_FRAMES",
+      "propriétés": {},
+      "widgets_values": [
+        "CADRES"
+      ],
+      "couleur": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 280,
+      "type": "RépéterLatentBatch",
+      "pos": [
+        1681,
+        1145
+      ],
+      "taille": {
+        "0": 315,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 39,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "échantillons",
+          "type": "LATENT",
+          "lien": 607
+        },
+        {
+          "nom": "montant",
+          "type": "INT",
+          "lien": 394,
+          "widget": {
+            "nom" : "montant"
+          }
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "LATENT",
+          "type": "LATENT",
+          « liens » : [
+            608
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « RepeatLatentBatch »
+      },
+      "widgets_values": [
+        1
+      ],
+      "couleur": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 277,
+      "type": "VAEEncode",
+      "pos": [
+        1696,
+        1078
+      ],
+      "taille": {
+        "0": 210,
+        "1": 46
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 33,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "pixels",
+          "type": "IMAGE",
+          "lien": 390
+        },
+        {
+          "nom": "vae",
+          "type": "VAE",
+          "lien": 391
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "LATENT",
+          "type": "LATENT",
+          « liens » : [
+            607
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « VAEEncode »
+      },
+      "couleur": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 538,
+      "type": "PrepImageForClipVision",
+      "pos": [
+        1664,
+        974
+      ],
+      "taille": [
+        262.4060965966787,
+        279.48583217993905
+      ],
+      "drapeaux": {
+        "épinglé" : faux
+      },
+      "commande": 34,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "image",
+          "type": "IMAGE",
+          "lien": 631
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "IMAGE",
+          "type": "IMAGE",
+          « liens » : [
+            627
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « PrepImageForClipVision »
+      },
+      "widgets_values": [
+        "LANCZOS",
+        "tampon",
+        0
+      ],
+      "couleur": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 269,
+      "type": "ImageScale",
+      "pos": [
+        1342,
+        925
+      ],
+      "taille": {
+        "0": 315,
+        "1": 130
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 37,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "image",
+          "type": "IMAGE",
+          "lien": 383
+        },
+        {
+          "nom": "largeur",
+          "type": "INT",
+          "lien": 381,
+          "widget": {
+            "nom": "largeur"
+          }
+        },
+        {
+          "nom": "taille",
+          "type": "INT",
+          "lien": 382,
+          "widget": {
+            "nom": "taille"
+          }
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "IMAGE",
+          "type": "IMAGE",
+          « liens » : [
+            386
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « ImageScale »
+      },
+      "widgets_values": [
+        « bilinéaire »,
+        512,
+        512,
+        "centre"
+      ],
+      "couleur": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 400,
+      "type": "ControlNetLoader",
+      "pos": [
+        1992.9811112469322,
+        32.26553651149976
+      ],
+      "taille": {
+        "0": 330,
+        "1": 60
+      },
+      "drapeaux": {
+        "effondré" : faux,
+        "épinglé" : faux
+      },
+      "commande": 10,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "CONTROL_NET",
+          "type": "CONTROL_NET",
+          « liens » : [
+            472
+          ],
+          "forme": 3
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « ControlNetLoader »
+      },
+      "widgets_values": [
+        "control_v11p_sd15_normalbae.pth"
+      ],
+      "couleur": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 399,
+      "type": "ACN_AdvancedControlNetApply",
+      "pos": [
+        1988.9151565040138,
+        178.72756369982017
+      ],
+      "taille": {
+        "0": 330,
+        "1": 286
+      },
+      "drapeaux": {
+        "épinglé" : faux
+      },
+      "commande": 44,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "positif",
+          "type": "CONDITIONNEMENT",
+          "lien": 717
+        },
+        {
+          "nom": "négatif",
+          "type": "CONDITIONNEMENT",
+          "lien": 711
+        },
+        {
+          "nom": "control_net",
+          "type": "CONTROL_NET",
+          "lien": 472,
+          "slot_index": 2
+        },
+        {
+          "nom": "image",
+          "type": "IMAGE",
+          "lien": 475
+        },
+        {
+          "nom": "masque_optionnel",
+          "type": "MASQUE",
+          "lien": nul
+        },
+        {
+          "nom": "timestep_kf",
+          "type": "TIMESTEP_KEYFRAME",
+          "lien": nul,
+          "slot_index": 5
+        },
+        {
+          "nom": "latent_kf_override",
+          "type": "LATENT_KEYFRAME",
+          "lien": nul
+        },
+        {
+          "nom": "weights_override",
+          "type": "CONTROL_POIDS_NET",
+          "lien": nul,
+          "slot_index": 7
+        },
+        {
+          "nom": "model_optional",
+          "type": "MODÈLE",
+          "lien": 726
+        },
+        {
+          "nom": "vae_optional",
+          "type": "VAE",
+          "lien": nul
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "positif",
+          "type": "CONDITIONNEMENT",
+          « liens » : [
+            735
+          ],
+          "forme": 3,
+          "slot_index": 0
+        },
+        {
+          "nom": "négatif",
+          "type": "CONDITIONNEMENT",
+          « liens » : [
+            736
+          ],
+          "forme": 3,
+          "slot_index": 1
+        },
+        {
+          "nom": "model_opt",
+          "type": "MODÈLE",
+          "liens": [],
+          "forme": 3,
+          "slot_index": 2
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « ACN_AdvancedControlNetApply »
+      },
+      "widgets_values": [
+        0,45,
+        0,
+        0,5
+      ],
+      "couleur": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 297,
+      "type": "PlaySound|pysssss",
+      "pos": [
+        2094.614135866712,
+        987.2632086201083
+      ],
+      "taille": {
+        "0": 315,
+        "1": 106
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 63,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "n'importe lequel",
+          "taper": "*",
+          "lien": 699
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "*",
+          "taper": "*",
+          "liens": nul,
+          "forme": 6
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « PlaySound|pysssss »
+      },
+      "widgets_values": [
+        "toujours",
+        0,5,
+        "notifier.mp3"
+      ],
+      "couleur": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 174,
+      "type": "GetNode",
+      "pos": [
+        2263.633689704217,
+        1177.612392838593
+      ],
+      "taille": {
+        "0": 210,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 11,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "MODÈLE",
+          "type": "MODÈLE",
+          "liens": [],
+          "slot_index": 0
+        }
+      ],
+      "titre": "Get_MODEL",
+      "propriétés": {},
+      "widgets_values": [
+        "MODÈLE"
+      ],
+      "couleur": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 609,
+      "type": "RIFE VFI",
+      "pos": [
+        1991.6141358667132,
+        822.2632086201083
+      ],
+      "taille": {
+        "0": 443.4000244140625,
+        "1": 198
+      },
+      "drapeaux": {},
+      "commande": 60,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "cadres",
+          "type": "IMAGE",
+          "lien": 697
+        },
+        {
+          "nom": "états_d'interpolation_optionnels",
+          "type": "ÉTATS_D'INTERPOLATION",
+          "lien": nul
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "IMAGE",
+          "type": "IMAGE",
+          « liens » : [
+            698,
+            699,
+            700
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "titre": "RIFE VFI",
+      "propriétés": {
+        « Nom du nœud pour S&R » : « RIFE VFI »
+      },
+      "widgets_values": [
+        "rife47.pth",
+        20,
+        3,
+        vrai,
+        FAUX,
+        1
+      ],
+      "couleur": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 566,
+      "type": "Effets HDR (SuperBeasts.AI)",
+      "pos": [
+        1997.6141358667132,
+        1073.2632086201083
+      ],
+      "taille": {
+        "0": 428.44287109375,
+        "1": 178
+      },
+      "drapeaux": {
+        "épinglé" : faux
+      },
+      "commande": 62,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "image",
+          "type": "IMAGE",
+          "lien": 698
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "result_img",
+          "type": "IMAGE",
+          « liens » : [
+            635
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « Effets HDR (SuperBeasts.AI) »
+      },
+      "widgets_values": [
+        0,5,
+        0,25,
+        0,75,
+        0,25,
+        0,1,
+        0,25
+      ],
+      "couleur": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 610,
+      "type": "GetNode",
+      "pos": [
+        2709.6783909890864,
+        223.32477563760858
+      ],
+      "taille": {
+        "0": 210,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 12,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "CONDITIONNEMENT",
+          "type": "CONDITIONNEMENT",
+          « liens » : [
+            711,
+            713
+          ],
+          "slot_index": 0
+        }
+      ],
+      "titre": "Get_NEG",
+      "propriétés": {},
+      "widgets_values": [
+        "NÉG"
+      ]
+    },
+    {
+      "id": 304,
+      "type": "SetNode",
+      "pos": [
+        2714.6783909890864,
+        187.32477563760858
+      ],
+      "taille": {
+        "0": 210,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 53,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "CONDITIONNEMENT",
+          "type": "CONDITIONNEMENT",
+          "lien": 705
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "*",
+          "taper": "*",
+          "liens": [],
+          "slot_index": 0
+        }
+      ],
+      "titre": "Set_POS",
+      "propriétés": {
+        "previousName": "POS"
+      },
+      "widgets_values": [
+        "POS"
+      ],
+      "couleur": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 605,
+      "type": "VAEDecode",
+      "pos": [
+        2728.6783909890864,
+        164.32477563760858
+      ],
+      "taille": {
+        "0": 210,
+        "1": 46
+      },
+      "drapeaux": {},
+      "commande": 54,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "échantillons",
+          "type": "LATENT",
+          "lien": 688,
+          "slot_index": 0
+        },
+        {
+          "nom": "vae",
+          "type": "VAE",
+          "lien": 715
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "IMAGE",
+          "type": "IMAGE",
+          « liens » : [
+            718,
+            757
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « VAEDecode »
+      }
+    },
+    {
+      "id": 608,
+      "type": "VAEDecode",
+      "pos": [
+        2433.6783909890864,
+        450.3247756376086
+      ],
+      "taille": {
+        "0": 210,
+        "1": 46
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 59,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "échantillons",
+          "type": "LATENT",
+          "lien": 692
+        },
+        {
+          "nom": "vae",
+          "type": "VAE",
+          "lien": 716
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "IMAGE",
+          "type": "IMAGE",
+          « liens » : [
+            697,
+            764
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « VAEDecode »
+      }
+    },
+    {
+      "id": 635,
+      "type": "VAEEncode",
+      "pos": [
+        2459.6783909890864,
+        414.3247756376086
+      ],
+      "taille": {
+        "0": 210,
+        "1": 46
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 57,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "pixels",
+          "type": "IMAGE",
+          "lien": 762
+        },
+        {
+          "nom": "vae",
+          "type": "VAE",
+          "lien": 763,
+          "slot_index": 1
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "LATENT",
+          "type": "LATENT",
+          « liens » : [
+            761
+          ],
+          "forme": 3
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « VAEEncode »
+      }
+    },
+    {
+      "id": 403,
+      "type": "GetNode",
+      "pos": [
+        2460.6783909890864,
+        382.3247756376086
+      ],
+      "taille": {
+        "0": 210,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 13,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "IMAGE",
+          "type": "IMAGE",
+          « liens » : [
+            475
+          ],
+          "slot_index": 0
+        }
+      ],
+      "titre": "Obtenir_l'IMAGE IPA",
+      "propriétés": {},
+      "widgets_values": [
+        "IMAGE IPA"
+      ],
+      "couleur": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 595,
+      "type": "Chaîne littérale",
+      "pos": [
+        2457.6783909890864,
+        383.3247756376086
+      ],
+      "taille": {
+        "0": 281.7430419921875,
+        "1": 90.15777587890625
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 14,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "CHAÎNE",
+          "type": "CHAÎNE",
+          « liens » : [
+            670
+          ],
+          "forme": 3
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « Chaîne littérale »
+      },
+      "widgets_values": [
+        " "
+      ]
+    },
+    {
+      "id": 171,
+      "type": "GetNode",
+      "pos": [
+        2391.6783909890864,
+        144.32477563760858
+      ],
+      "taille": [
+        328.26308805780354,
+        58
+      ],
+      "drapeaux": {
+        "effondré" : faux,
+        "épinglé" : faux
+      },
+      "commande": 15,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "LATENT",
+          "type": "LATENT",
+          « liens » : [
+            676
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "Get_LATENT - VIDE",
+      "propriétés": {},
+      "widgets_values": [
+        « LATENT - VIDE »
+      ],
+      "couleur": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 597,
+      "type": "Générateur de graines",
+      "pos": [
+        2386.6783909890864,
+        24.32477563760881
+      ],
+      "taille": [
+        322.0952722783786,
+        82
+      ],
+      "drapeaux": {},
+      "commande": 16,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "INT",
+          "type": "INT",
+          « liens » : [
+            677,
+            684
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « Générateur de semences »
+      },
+      "widgets_values": [
+        722762637525012,
+        "randomiser"
+      ],
+      "couleur": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 604,
+      "type": "Mikey Sampler Base uniquement Avancé",
+      "pos": [
+        2741.6783909890864,
+        26.3247756376088
+      ],
+      "taille": [
+        332.69894037585436,
+        474.37964056607154
+      ],
+      "drapeaux": {
+        "épinglé" : faux
+      },
+      "commande": 58,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "modèle_de_base",
+          "type": "MODÈLE",
+          "lien": 751
+        },
+        {
+          "nom": "base_de_conditions_positives",
+          "type": "CONDITIONNEMENT",
+          "lien": 737,
+          "slot_index": 1
+        },
+        {
+          "nom": "base_de_conditions_négatives",
+          "type": "CONDITIONNEMENT",
+          "lien": 713
+        },
+        {
+          "nom": "échantillons",
+          "type": "LATENT",
+          "lien": 761,
+          "slot_index": 3
+        },
+        {
+          "nom": "vae",
+          "type": "VAE",
+          "lien": 714
+        },
+        {
+          "nom": "graine",
+          "type": "INT",
+          "lien": 684,
+          "widget": {
+            "nom": "graine"
+          }
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "LATENT",
+          "type": "LATENT",
+          « liens » : [
+            692
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « Mikey Sampler Base Only Advanced »
+      },
+      "widgets_values": [
+        "activer",
+        1,
+        10,
+        3,
+        1,
+        1.3,
+        "lcm",
+        "sgm_uniforme",
+        "le plus proche exact",
+        1114494255159882,
+        "randomiser",
+        1.1,
+        0,35000000000000003,
+        5
+      ],
+      "couleur": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 596,
+      "type": "KSampler",
+      "pos": [
+        2386.6783909890864,
+        224.32477563760858
+      ],
+      "taille": {
+        "0": 315,
+        "1": 262
+      },
+      "drapeaux": {},
+      "commande": 52,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "modèle",
+          "type": "MODÈLE",
+          "lien": 749
+        },
+        {
+          "nom": "positif",
+          "type": "CONDITIONNEMENT",
+          "lien": 735,
+          "slot_index": 1
+        },
+        {
+          "nom": "négatif",
+          "type": "CONDITIONNEMENT",
+          "lien": 736
+        },
+        {
+          "nom": "image_latente",
+          "type": "LATENT",
+          "lien": 676,
+          "slot_index": 3
+        },
+        {
+          "nom": "graine",
+          "type": "INT",
+          "lien": 677,
+          "widget": {
+            "nom": "graine"
+          },
+          "slot_index": 4
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "LATENT",
+          "type": "LATENT",
+          « liens » : [
+            688
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « KSampler »
+      },
+      "widgets_values": [
+        79963874690865,
+        "randomiser",
+        9,
+        1,
+        "lcm",
+        "sgm_uniforme",
+        1
+      ],
+      "couleur": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 531,
+      "type": "PreviewImage",
+      "pos": [
+        2493,
+        829
+      ],
+      "taille": {
+        "0": 408.6849060058594,
+        "1": 440.19921875
+      },
+      "drapeaux": {
+        "effondré" : faux,
+        "épinglé" : faux
+      },
+      "commande": 55,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "images",
+          "type": "IMAGE",
+          "lien": 718
+        }
+      ],
+      "titre": "Aperçu de l'image d'entrée",
+      "propriétés": {
+        « Nom du nœud pour S&R » : « PreviewImage »
+      },
+      "couleur": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 116,
+      "type": "Largeur/Hauteur littérale",
+      "pos": [
+        -16,
+        861
+      ],
+      "taille": {
+        "0": 280,
+        "1": 60
+      },
+      "drapeaux": {
+        "épinglé" : faux
+      },
+      "commande": 17,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "INT",
+          "type": "INT",
+          « liens » : [
+            344,
+            381
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "titre": "Largeur",
+      "propriétés": {
+        « Nom du nœud pour S&R » : « Littéral largeur/hauteur »
+      },
+      "widgets_values": [
+        513
+      ],
+      "couleur": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 629,
+      "type": "Int Littéral",
+      "pos": [
+        68,
+        -17
+      ],
+      "taille": [
+        450.1314794831701,
+        58
+      ],
+      "drapeaux": {
+        « épinglé » : vrai
+      },
+      "commande": 18,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "INT",
+          "type": "INT",
+          « liens » : [
+            755
+          ],
+          "forme": 3
+        }
+      ],
+      "title": "Lot d'images d'entrée",
+      "propriétés": {
+        « Nom du nœud pour S&R » : « Int Literal »
+      },
+      "widgets_values": [
+        1
+      ],
+      "couleur": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 270,
+      "type": "PreviewImage",
+      "pos": [
+        2926,
+        829
+      ],
+      "taille": [
+        476.8695173470787,
+        437.02950979393245
+      ],
+      "drapeaux": {
+        "épinglé" : faux
+      },
+      "commande": 61,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "images",
+          "type": "IMAGE",
+          "lien": 764,
+          "slot_index": 0
+        }
+      ],
+      "titre": "Aperçu des images d'animation",
+      "propriétés": {
+        « Nom du nœud pour S&R » : « PreviewImage »
+      },
+      "couleur": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 428,
+      "type": "JWStringConcat",
+      "pos": [
+        719,
+        539
+      ],
+      "taille": {
+        "0": 210,
+        "1": 54
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 38,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "un",
+          "type": "CHAÎNE",
+          "lien": nul,
+          "widget": {
+            "nom": "un"
+          },
+          "slot_index": 0
+        },
+        {
+          "nom": "b",
+          "type": "CHAÎNE",
+          "lien": 498,
+          "widget": {
+            "nom": "b"
+          }
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "CHAÎNE",
+          "type": "CHAÎNE",
+          « liens » : [
+            696
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « JWStringConcat »
+      },
+      "widgets_values": [
+        "",
+        " "
+      ],
+      "couleur": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 628,
+      "type": "Int Littéral",
+      "pos": [
+        311,
+        866
+      ],
+      "taille": [
+        240.46620892364842,
+        67.11379078171217
+      ],
+      "drapeaux": {},
+      "commande": 19,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "INT",
+          "type": "INT",
+          « liens » : [
+            747
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "titre": "Cadres",
+      "propriétés": {
+        « Nom du nœud pour S&R » : « Int Literal »
+      },
+      "widgets_values": [
+        180
+      ],
+      "couleur": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 219,
+      "type": "SetNode",
+      "pos": [
+        349,
+        1013
+      ],
+      "taille": {
+        "0": 210,
+        "1": 58
+      },
+      "drapeaux": {
+        "effondré" : vrai
+      },
+      "commande": 35,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "INT",
+          "type": "INT",
+          "lien": 747
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "INT",
+          "type": "INT",
+          « liens » : [
+            754
+          ],
+          "slot_index": 0
+        }
+      ],
+      "titre": "Set_FRAMES",
+      "propriétés": {
+        "previousName": "CADRES"
+      },
+      "widgets_values": [
+        "CADRES"
+      ],
+      "couleur": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 255,
+      "type": "Préfixe du nom de fichier",
+      "pos": [
+        -1023,
+        1111
+      ],
+      "taille": {
+        "0": 424.1551208496094,
+        "1": 133.228271484375
+      },
+      "drapeaux": {
+        « épinglé » : vrai
+      },
+      "commande": 20,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "préfixe_nom_fichier",
+          "type": "CHAÎNE",
+          « liens » : [
+            352
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « FileNamePrefix »
+      },
+      "widgets_values": [
+        "FAUX",
+        "FAUX",
+        "Aperçu",
+        "ADIFF"
+      ],
+      "couleur": "#1d6722",
+      "bgcolor": "#09530e"
+    },
+    {
+      "id": 370,
+      "type": "Préfixe du nom de fichier",
+      "pos": [
+        -527,
+        1093
+      ],
+      "taille": {
+        "0": 438.7285461425781,
+        "1": 146.41648864746094
+      },
+      "drapeaux": {
+        « épinglé » : vrai
+      },
+      "commande": 21,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "préfixe_nom_fichier",
+          "type": "CHAÎNE",
+          « liens » : [
+            452
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « FileNamePrefix »
+      },
+      "widgets_values": [
+        "FAUX",
+        "FAUX",
+        "HDR",
+        "ADIFF_HDR"
+      ],
+      "couleur": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 23,
+      "type": "ADE_AnimateDiffLoRALoader",
+      "pos": [
+        640,
+        1106
+      ],
+      "taille": {
+        "0": 557.9403686523438,
+        "1": 82
+      },
+      "drapeaux": {
+        "effondré" : faux
+      },
+      "commande": 22,
+      "mode": 4,
+      « entrées » : [
+        {
+          "nom": "prev_motion_lora",
+          "type": "MOTION_LORA",
+          "lien": nul,
+          "slot_index": 0
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "MOTION_LORA",
+          "type": "MOTION_LORA",
+          « liens » : [
+            434
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « ADE_AnimateDiffLoRALoader »
+      },
+      "widgets_values": [
+        "v2_lora_ZoomIn.ckpt",
+        0,222
+      ],
+      "couleur": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 374,
+      "type": "JWStringMultiline",
+      "pos": [
+        677,
+        467
+      ],
+      "taille": [
+        401.8813001190374,
+        220.36796894512963
+      ],
+      "drapeaux": {
+        "effondré" : faux,
+        « épinglé » : vrai
+      },
+      "commande": 23,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "CHAÎNE",
+          "type": "CHAÎNE",
+          « liens » : [
+            725
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "titre": "Invite principale",
+      "propriétés": {
+        « Nom du nœud pour S&R » : « JWStringMultiline »
+      },
+      "widgets_values": [
+        « Une belle femme latine regardant par-dessus son épaule »
+      ],
+      "couleur": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 117,
+      "type": "Largeur/Hauteur littérale",
+      "pos": [
+        -18,
+        976
+      ],
+      "taille": {
+        "0": 280,
+        "1": 60
+      },
+      "drapeaux": {
+        "épinglé" : faux
+      },
+      "commande": 24,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "INT",
+          "type": "INT",
+          « liens » : [
+            345,
+            382
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "titre": "Hauteur",
+      "propriétés": {
+        « Nom du nœud pour S&R » : « Littéral largeur/hauteur »
+      },
+      "widgets_values": [
+        769
+      ],
+      "couleur": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 632,
+      "type": "Image vide",
+      "pos": [
+        -20,
+        1097
+      ],
+      "taille": [
+        234.72579724187472,
+        130
+      ],
+      "drapeaux": {},
+      "commande": 25,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "IMAGE",
+          "type": "IMAGE",
+          « liens » : [
+            758
+          ],
+          "forme": 3
+        }
+      ],
+      "titre": "Cadres latents",
+      "propriétés": {
+        « Nom du nœud pour S&R » : « EmptyImage »
+      },
+      "widgets_values": [
+        513,
+        769,
+        180,
+        0
+      ],
+      "couleur": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 324,
+      "type": "ADE_MultivalDynamic",
+      "pos": [
+        1598.5688907181384,
+        411.7275837269808
+      ],
+      "taille": [
+        284.41391509511095,
+        58
+      ],
+      "drapeaux": {
+        "effondré" : faux,
+        "épinglé" : faux
+      },
+      "commande": 26,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "masque_optionnel",
+          "type": "MASQUE",
+          "lien": nul
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "MULTIVAL",
+          "type": "MULTIVÉ",
+          « liens » : [
+            436
+          ],
+          "forme": 3
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « ADE_MultivalDynamic »
+      },
+      "widgets_values": [
+        1.1
+      ],
+      "couleur": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 424,
+      "type": "JWStringMultiline",
+      "pos": [
+        1118,
+        467
+      ],
+      "taille": [
+        296.48999865318046,
+        217.09780912859844
+      ],
+      "drapeaux": {
+        "effondré" : faux,
+        « épinglé » : vrai
+      },
+      "commande": 27,
+      "mode": 0,
+      « sorties » : [
+        {
+          "nom": "CHAÎNE",
+          "type": "CHAÎNE",
+          « liens » : [
+            498
+          ],
+          "forme": 3,
+          "slot_index": 0
+        }
+      ],
+      "titre": "Ajustements de qualité",
+      "propriétés": {
+        « Nom du nœud pour S&R » : « JWStringMultiline »
+      },
+      "widgets_values": [
+        "chef-d'œuvre, meilleure qualité, 32k HD, visage détaillé, meilleure qualité, très détaillé, expression artistique, expérience immersive, technique experte, (((mouvements fluides))), visage magnifique et détaillé"
+      ],
+      "couleur": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 13,
+      "type": "Chargeur efficace",
+      "pos": [
+        -9,
+        80
+      ],
+      "taille": {
+        "0": 570,
+        "1": 722
+      },
+      "drapeaux": {
+        « épinglé » : vrai
+      },
+      "commande": 36,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "lora_stack",
+          "type": "LORA_STACK",
+          "lien": 297
+        },
+        {
+          "nom": "cnet_stack",
+          "type": "CONTROL_NET_STACK",
+          "lien": nul
+        },
+        {
+          "nom": "taille_du_lot",
+          "type": "INT",
+          "lien": 755,
+          "widget": {
+            "nom": "taille_du_lot"
+          },
+          "slot_index": 2
+        },
+        {
+          "nom": "largeur_latente_vide",
+          "type": "INT",
+          "lien": 344,
+          "widget": {
+            "nom": "largeur_latente_vide"
+          },
+          "slot_index": 3
+        },
+        {
+          "nom": "hauteur_latente_vide",
+          "type": "INT",
+          "lien": 345,
+          "widget": {
+            "nom": "hauteur_latente_vide"
+          },
+          "slot_index": 4
+        },
+        {
+          "nom": "positif",
+          "type": "CHAÎNE",
+          "lien": 725,
+          "widget": {
+            "nom": "positif"
+          },
+          "slot_index": 5
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "MODÈLE",
+          "type": "MODÈLE",
+          « liens » : [
+            221,
+            637,
+            639,
+            726,
+            750
+          ],
+          "forme": 3,
+          "slot_index": 0
+        },
+        {
+          "nom": "CONDITIONNEMENT+",
+          "type": "CONDITIONNEMENT",
+          « liens » : [
+            717
+          ],
+          "forme": 3,
+          "slot_index": 1
+        },
+        {
+          "nom": "CONDITIONNEMENT-",
+          "type": "CONDITIONNEMENT",
+          « liens » : [
+            413
+          ],
+          "forme": 3,
+          "slot_index": 2
+        },
+        {
+          "nom": "LATENT",
+          "type": "LATENT",
+          « liens » : [
+            358
+          ],
+          "forme": 3,
+          "slot_index": 3
+        },
+        {
+          "nom": "VAE",
+          "type": "VAE",
+          « liens » : [
+            214
+          ],
+          "forme": 3,
+          "slot_index": 4
+        },
+        {
+          "nom": "CLIP",
+          "type": "CLIP",
+          « liens » : [
+            215,
+            645
+          ],
+          "forme": 3,
+          "slot_index": 5
+        },
+        {
+          "nom": "DÉPENDANCES",
+          "type": "DÉPENDANCES",
+          "liens": nul,
+          "forme": 3
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « Chargeur efficace »
+      },
+      "widgets_values": [
+        "photonLCM_v10.safetensors",
+        "VAE cuit",
+        -1,
+        "AnimateLCM_sd15_t2v_lora.safetensors",
+        0,15,
+        0,15,
+        "",
+        "Flou, mauvaise qualité, (visage supplémentaire : 1,5), (tête supplémentaire : 1,5), (sœurs : 1,5), (jumeaux : 1,5), (mauvaise anatomie : 1,5), (double : 1,5), (sosie : 1,5), (2 personnes : 1,5), (plusieurs personnes : 1,5), nu, nu (((morphing))) (((fusion))), (((danse : 1,5))), (((nu : 1,5))), (((nu : 1,5))), (((seins nus : 1,5))), (((face vers le spectateur : 1,5))), (((face vers la caméra : 1,5)))",
+        "aucun",
+        "A1111",
+        576,
+        896,
+        24
+      ],
+      "couleur": "#223",
+      "bgcolor": "#335",
+      "forme": 1
+    },
+    {
+      "id": 637,
+      "type": "Remarque",
+      "pos": [
+        -1858,
+        -11
+      ],
+      "taille": [
+        332.59212906398125,
+        58
+      ],
+      "drapeaux": {},
+      "commande": 28,
+      "mode": 0,
+      "propriétés": {
+        "texte": ""
+      },
+      "widgets_values": [
+        « L'image de référence ne fera que la différence que vous lui permettrez de faire via l'adaptateur IP. »
+      ],
+      "couleur": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 638,
+      "type": "Remarque",
+      "pos": [
+        -500,
+        -138
+      ],
+      "taille": [
+        374.4138159305869,
+        66.87600407347688
+      ],
+      "drapeaux": {},
+      "commande": 29,
+      "mode": 0,
+      "propriétés": {
+        "texte": ""
+      },
+      "widgets_values": [
+        « La sortie HQ est fondamentalement la même que la sortie normale, mais elle passe par le module HDR. »
+      ],
+      "couleur": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 631,
+      "type": "Commutateur de processus par lots CR",
+      "pos": [
+        320,
+        992
+      ],
+      "taille": [
+        246.99435618073062,
+        122.97728142151641
+      ],
+      "drapeaux": {},
+      "commande": 56,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "image",
+          "type": "IMAGE",
+          "lien": 757
+        },
+        {
+          "nom": "image_batch",
+          "type": "IMAGE",
+          "lien": 758,
+          "slot_index": 1
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "IMAGE",
+          "type": "IMAGE",
+          « liens » : [
+            762
+          ],
+          "forme": 3,
+          "slot_index": 0
+        },
+        {
+          "nom": "show_help",
+          "type": "CHAÎNE",
+          "liens": nul,
+          "forme": 3
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « Commutateur de processus par lots CR »
+      },
+      "widgets_values": [
+        « lot d'images »
+      ],
+      "couleur": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 573,
+      "type": "BatchPromptSchedule",
+      "pos": [
+        626,
+        33
+      ],
+      "taille": [
+        905.1438276038596,
+        384.2960324816714
+      ],
+      "drapeaux": {
+        « épinglé » : vrai
+      },
+      "commande": 50,
+      "mode": 0,
+      « entrées » : [
+        {
+          "nom": "clip",
+          "type": "CLIP",
+          "lien": 645
+        },
+        {
+          "nom": "pré_texte",
+          "type": "CHAÎNE",
+          "lien": 696,
+          "widget": {
+            "nom": "pré_texte"
+          },
+          "slot_index": 1
+        },
+        {
+          "nom": "texte_de_l'application",
+          "type": "CHAÎNE",
+          "lien": 670,
+          "widget": {
+            "nom": "texte_de_l'application"
+          },
+          "slot_index": 2
+        },
+        {
+          "nom": "pw_a",
+          "type": "FLOAT",
+          "lien": nul,
+          "widget": {
+            "nom": "pw_a"
+          }
+        },
+        {
+          "nom": "pw_b",
+          "type": "FLOAT",
+          "lien": nul,
+          "widget": {
+            "nom": "pw_b"
+          }
+        },
+        {
+          "nom": "pw_c",
+          "type": "FLOAT",
+          "lien": nul,
+          "widget": {
+            "nom": "pw_c"
+          }
+        },
+        {
+          "nom": "pw_d",
+          "type": "FLOAT",
+          "lien": nul,
+          "widget": {
+            "nom": "pw_d"
+          }
+        },
+        {
+          "nom": "max_frames",
+          "type": "INT",
+          "lien": 754,
+          "widget": {
+            "nom": "max_frames"
+          }
+        }
+      ],
+      « sorties » : [
+        {
+          "nom": "POS",
+          "type": "CONDITIONNEMENT",
+          « liens » : [
+            705,
+            737
+          ],
+          "forme": 3,
+          "slot_index": 0
+        },
+        {
+          "nom": "NEG",
+          "type": "CONDITIONNEMENT",
+          "liens": nul,
+          "forme": 3
+        }
+      ],
+      "propriétés": {
+        « Nom du nœud pour S&R » : « BatchPromptSchedule »
+      },
+      "widgets_values": [
+        "\"0\":\"Une belle femme latine dans une robe complexe avec des roses violettes (((regardant le spectateur par-dessus son épaule)))\",\n\"20\":\"Une belle femme latine dans une robe complexe avec des roses violettes (((regardant le spectateur par-dessus son épaule)))\",\n\"40\":\"Une belle femme latine dans une robe complexe avec des roses violettes regardant par-dessus son épaule (((clin d'œil au spectateur)))\",\n\"60\":\"Une belle femme latine dans une robe complexe avec des roses violettes regardant par-dessus son épaule (((clin d'œil au spectateur)))\",\n\"80\":\"Une belle femme latine dans une robe complexe avec des roses violettes regardant par-dessus son épaule (((clin d'œil et envoyant un baiser au spectateur)))\",\n\"100\":\"Une belle femme latine dans une robe complexe avec des roses violettes regardant par-dessus son épaule (((clin d'œil et envoyant un baiser à le spectateur)))\",\n\"120\":\"Une belle femme latine dans une robe complexe avec des roses violettes avec (((son dos tourné vers le spectateur)))\",\n\"140\":\"Une belle femme latine dans une robe complexe avec des roses violettes avec (((son dos tourné vers le spectateur)))\",\n\"160\":\"Une belle femme latine dans une robe complexe avec des roses violettes (((s'éloigne avec son dos tourné vers le spectateur)))\",\n\"180\":\"Une belle femme latine dans une robe complexe avec des roses violettes (((s'éloigne avec son dos tourné vers le spectateur)))\"\n\n\n",
+        78,
+        FAUX,
+        "",
+        "",
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "couleur": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 640,
+      "type": "Remarque",
+      "pos": [
+        -41,
+        -162
+      ],
+      "taille": [
+        607.804603944154,
+        91.44058446713541
+      ],
+      "drapeaux": {},
+      "commande": 30,
+      "mode": 0,
+      "title": "Spécial non destiné au lot d'entrée",
+      "propriétés": {
+        "texte": ""
+      },
+      "widgets_values": [
+        "Si vous avez un nombre total d'images de 180 et que le lot d'entrée est de 1, alors les images latentes doivent être de 180.\n\nSi vous avez un nombre total d'images de 180 et que le lot d'entrée est de 2, les images latentes doivent être de 90.\n\nSi vous avez un nombre total d'images de 180 et que le lot d'entrée est de 3, les images latentes doivent être de 60."
+      ],
+      "couleur": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 639,
+      "type": "Remarque",
+      "pos": [
+        -31,
+        -301
+      ],
+      "taille": [
+        400.0616225953291,
+        90.10022945161666
+      ],
+      "drapeaux": {},
+      "commande": 31,
+      "mode": 0,
+      "propriétés": {
+        "texte": ""
+      },
+      "widgets_values": [
+        "Lot d'entrée : nombre de versions de l'image d'entrée que vous souhaitez utiliser\nTexte dans le chargeur efficace = invite négative\nCadres : nombre total de cadres\nCadres latents : identique au nombre total de cadres"
+      ],
+      "couleur": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 641,
+      "type": "Remarque",
+      "pos": [
+        3157,
+        563
+      ],
+      "taille": [
+        277.20001220703125,
+        169.99044689748143
+      ],
+      "drapeaux": {
+        « épinglé » : vrai
+      },
+      "commande": 32,
+      "mode": 0,
+      "titre": "Remarque pour les images d'animation d'aperçu",
+      "propriétés": {
+        "texte": ""
+      },
+      "widgets_values": [
+        « Les images d'animation d'aperçu sont également enregistrées dans le dossier par défaut :\n\n\\ComfyUI\\ComfyUI_windows_portable\\ComfyUI\\temp\n\nCe qui peut s'avérer utile pour améliorer encore les vidéos. Par exemple, créer un lot et l'exécuter via ReActor et le mettre à l'échelle. »
+      ],
+      "couleur": "#ff9292",
+      "bgcolor": "#f77e7e"
+    }
+  ],
+  « liens » : [
+    [
+      214,
+      13,
+      4,
+      168,
+      0,
+      "*"
+    ],
+    [
+      215,
+      13,
+      5,
+      169,
+      0,
+      "*"
+    ],
+    [
+      221,
+      13,
+      0,
+      173,
+      0,
+      "*"
+    ],
+    [
+      297,
+      24,
+      0,
+      13,
+      0,
+      "LORA_STACK"
+    ],
+    [
+      344,
+      116,
+      0,
+      13,
+      3,
+      "INT"
+    ],
+    [
+      345,
+      117,
+      0,
+      13,
+      4,
+      "INT"
+    ],
+    [
+      352,
+      255,
+      0,
+      18,
+      3,
+      "CHAÎNE"
+    ],
+    [
+      358,
+      13,
+      3,
+      259,
+      0,
+      "*"
+    ],
+    [
+      381,
+      116,
+      0,
+      269,
+      1,
+      "INT"
+    ],
+    [
+      382,
+      117,
+      0,
+      269,
+      2,
+      "INT"
+    ],
+    [
+      383,
+      63,
+      0,
+      269,
+      0,
+      "IMAGE"
+    ],
+    [
+      386,
+      269,
+      0,
+      273,
+      0,
+      "*"
+    ],
+    [
+      390,
+      276,
+      0,
+      277,
+      0,
+      "IMAGE"
+    ],
+    [
+      391,
+      278,
+      0,
+      277,
+      1,
+      "VAE"
+    ],
+    [
+      394,
+      281,
+      0,
+      280,
+      1,
+      "INT"
+    ],
+    [
+      413,
+      13,
+      2,
+      305,
+      0,
+      "*"
+    ],
+    [
+      434,
+      23,
+      0,
+      323,
+      2,
+      "MOTION_LORA"
+    ],
+    [
+      436,
+      324,
+      0,
+      323,
+      6,
+      "MULTIVATION"
+    ],
+    [
+      452,
+      370,
+      0,
+      369,
+      3,
+      "CHAÎNE"
+    ],
+    [
+      472,
+      400,
+      0,
+      399,
+      2,
+      "CONTROL_NET"
+    ],
+    [
+      475,
+      403,
+      0,
+      399,
+      3,
+      "IMAGE"
+    ],
+    [
+      498,
+      424,
+      0,
+      428,
+      1,
+      "CHAÎNE"
+    ],
+    [
+      607,
+      277,
+      0,
+      280,
+      0,
+      "LATENT"
+    ],
+    [
+      608,
+      280,
+      0,
+      517,
+      0,
+      "LATENT"
+    ],
+    [
+      615,
+      528,
+      0,
+      527,
+      1,
+      "Adaptateur IPA"
+    ],
+    [
+      627,
+      538,
+      0,
+      527,
+      2,
+      "IMAGE"
+    ],
+    [
+      631,
+      63,
+      0,
+      538,
+      0,
+      "IMAGE"
+    ],
+    [
+      635,
+      566,
+      0,
+      369,
+      0,
+      "IMAGE"
+    ],
+    [
+      637,
+      13,
+      0,
+      527,
+      0,
+      "MODÈLE"
+    ],
+    [
+      638,
+      572,
+      0,
+      527,
+      5,
+      "CLIP_VISION"
+    ],
+    [
+      639,
+      13,
+      0,
+      175,
+      0,
+      "MODÈLE"
+    ],
+    [
+      645,
+      13,
+      5,
+      573,
+      0,
+      "AGRAFE"
+    ],
+    [
+      670,
+      595,
+      0,
+      573,
+      2,
+      "CHAÎNE"
+    ],
+    [
+      676,
+      171,
+      0,
+      596,
+      3,
+      "LATENT"
+    ],
+    [
+      677,
+      597,
+      0,
+      596,
+      4,
+      "INT"
+    ],
+    [
+      684,
+      597,
+      0,
+      604,
+      5,
+      "INT"
+    ],
+    [
+      688,
+      596,
+      0,
+      605,
+      0,
+      "LATENT"
+    ],
+    [
+      692,
+      604,
+      0,
+      608,
+      0,
+      "LATENT"
+    ],
+    [
+      696,
+      428,
+      0,
+      573,
+      1,
+      "CHAÎNE"
+    ],
+    [
+      697,
+      608,
+      0,
+      609,
+      0,
+      "IMAGE"
+    ],
+    [
+      698,
+      609,
+      0,
+      566,
+      0,
+      "IMAGE"
+    ],
+    [
+      699,
+      609,
+      0,
+      297,
+      0,
+      "*"
+    ],
+    [
+      700,
+      609,
+      0,
+      18,
+      0,
+      "IMAGE"
+    ],
+    [
+      701,
+      17,
+      0,
+      323,
+      1,
+      « OPTIONS_CONTEXTE »
+    ],
+    [
+      705,
+      573,
+      0,
+      304,
+      0,
+      "CONDITIONNEMENT"
+    ],
+    [
+      711,
+      610,
+      0,
+      399,
+      1,
+      "CONDITIONNEMENT"
+    ],
+    [
+      713,
+      610,
+      0,
+      604,
+      2,
+      "CONDITIONNEMENT"
+    ],
+    [
+      714,
+      172,
+      0,
+      604,
+      4,
+      "VAE"
+    ],
+    [
+      715,
+      172,
+      0,
+      605,
+      1,
+      "VAE"
+    ],
+    [
+      716,
+      172,
+      0,
+      608,
+      1,
+      "VAE"
+    ],
+    [
+      717,
+      13,
+      1,
+      399,
+      0,
+      "CONDITIONNEMENT"
+    ],
+    [
+      718,
+      605,
+      0,
+      531,
+      0,
+      "IMAGE"
+    ],
+    [
+      725,
+      374,
+      0,
+      13,
+      5,
+      "CHAÎNE"
+    ],
+    [
+      726,
+      13,
+      0,
+      399,
+      8,
+      "MODÈLE"
+    ],
+    [
+      735,
+      399,
+      0,
+      596,
+      1,
+      "CONDITIONNEMENT"
+    ],
+    [
+      736,
+      399,
+      1,
+      596,
+      2,
+      "CONDITIONNEMENT"
+    ],
+    [
+      737,
+      573,
+      0,
+      604,
+      1,
+      "CONDITIONNEMENT"
+    ],
+    [
+      747,
+      628,
+      0,
+      219,
+      0,
+      "INT"
+    ],
+    [
+      749,
+      527,
+      0,
+      596,
+      0,
+      "MODÈLE"
+    ],
+    [
+      750,
+      13,
+      0,
+      323,
+      0,
+      "MODÈLE"
+    ],
+    [
+      751,
+      323,
+      0,
+      604,
+      0,
+      "MODÈLE"
+    ],
+    [
+      754,
+      219,
+      0,
+      573,
+      7,
+      "INT"
+    ],
+    [
+      755,
+      629,
+      0,
+      13,
+      2,
+      "INT"
+    ],
+    [
+      757,
+      605,
+      0,
+      631,
+      0,
+      "IMAGE"
+    ],
+    [
+      758,
+      632,
+      0,
+      631,
+      1,
+      "IMAGE"
+    ],
+    [
+      761,
+      635,
+      0,
+      604,
+      3,
+      "LATENT"
+    ],
+    [
+      762,
+      631,
+      0,
+      635,
+      0,
+      "IMAGE"
+    ],
+    [
+      763,
+      172,
+      0,
+      635,
+      1,
+      "VAE"
+    ],
+    [
+      764,
+      608,
+      0,
+      270,
+      0,
+      "IMAGE"
+    ],
+    [
+      765,
+      636,
+      0,
+      323,
+      7,
+      "MULTIVATION"
+    ]
+  ],
+  « groupes » : [
+    {
+      "titre": "KSampler",
+      « délimitation » : [
+        2377,
+        -50,
+        766,
+        778
+      ],
+      "couleur": "#b08ef1",
+      "font_size": 24,
+      "verrouillé" : vrai
+    },
+    {
+      "titre": "Paramètres",
+      « délimitation » : [
+        -39,
+        -56,
+        629,
+        1318
+      ],
+      "couleur": "#88A",
+      "font_size": 24,
+      "verrouillé" : vrai
+    },
+    {
+      "titre": "Interpolation",
+      « délimitation » : [
+        1971,
+        746,
+        477,
+        520
+      ],
+      "couleur": "#00f0c8",
+      "font_size": 24,
+      "verrouillé": faux
+    },
+    {
+      "titre": "AnimateDiff",
+      « délimitation » : [
+        1567,
+        -53,
+        364,
+        781
+      ],
+      "couleur": "#8AA",
+      "font_size": 24,
+      "verrouillé" : vrai
+    },
+    {
+      "titre": "ControlNet ",
+      « délimitation » : [
+        1969,
+        -51,
+        373,
+        772
+      ],
+      "couleur": "#b06634",
+      "font_size": 24,
+      "verrouillé" : vrai
+    },
+    {
+      "titre": "Adaptateur IP",
+      « délimitation » : [
+        1281,
+        746,
+        658,
+        519
+      ],
+      "couleur": "#a1309b",
+      "font_size": 24,
+      "verrouillé": faux
+    },
+    {
+      "titre": "Entrée",
+      « délimitation » : [
+        -1499,
+        -52,
+        456,
+        1316
+      ],
+      "couleur": "#8A8",
+      "font_size": 30,
+      "verrouillé" : vrai
+    },
+    {
+      "titre": "Sortie",
+      « délimitation » : [
+        -1032,
+        -51,
+        460,
+        1314
+      ],
+      "couleur": "#8A8",
+      "font_size": 24,
+      "verrouillé" : vrai
+    },
+    {
+      "titre": "Sortie HQ",
+      « délimitation » : [
+        -547,
+        -55,
+        478,
+        1316
+      ],
+      "couleur": "#8A8",
+      "font_size": 24,
+      "verrouillé" : vrai
+    },
+    {
+      "titre": "Invites",
+      « délimitation » : [
+        612,
+        -48,
+        916,
+        766
+      ],
+      "couleur": "#b2ea39",
+      "font_size": 24,
+      "verrouillé" : vrai
+    },
+    {
+      "titre": "Aperçus",
+      « délimitation » : [
+        2471,
+        748,
+        967,
+        543
+      ],
+      "couleur": "#3f789e",
+      "font_size": 24,
+      "verrouillé": faux
+    },
+    {
+      "titre": "LoRa",
+      « délimitation » : [
+        617,
+        744,
+        648,
+        513
+      ],
+      "couleur": "#3f789e",
+      "font_size": 24,
+      "verrouillé" : vrai
+    }
+  ],
+  "config": {},
+  "supplémentaire": {
+    "groupNodes": {},
+    "ds": {
+      « échelle » : 0,5559917313492282,
+      "compenser": {
+        "0": 1727.671919178102,
+        "1": -137.66256107093645
+      }
+    }
+  },
+  "version": 0.4
+}
